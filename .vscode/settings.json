@@ -1,0 +1,10 @@
+{
+    "spellright.language": [],
+    "spellright.documentTypes": [
+        "markdown",
+        "latex",
+        "plaintext"
+    ],
+    "editor.parameterHints.enabled": false
+    "editor.hover.enabled": false
+}

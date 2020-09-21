@@ -1,0 +1,85 @@
+body {
+    background-color: black;
+}
+
+.header1 {
+    text-align: center;
+    color: orangered;
+    font-family: 'Luminari';
+    font-size: 50px;
+    margin: 10px;
+}
+
+.header2 {
+    text-align: center;
+    color: orange;
+    font-family: 'Luminari';
+    font-size: 30px;
+    margin: 10px;
+}
+
+.welcomep {
+    color: white;
+}
+
+.topbox {
+    color: white;
+    text-align: center;
+    border: 3px solid white;
+    padding: 20px;
+    margin: 5px;
+    height: 400px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: large;
+}
+
+.outerbox {
+    width: 1000px;
+    height: 500px;
+    border: 5px solid white;
+    display: flex;
+    margin: auto;
+}
+
+.rightbox {
+    color: white;
+    text-align: center;
+    border: 3px solid white;
+    padding: 20px;
+    margin: 5px;
+    height: auto;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: large;
+}
+
+.leftbox {
+    color: white;
+    text-align: center;
+    border: 3px solid white;
+    padding: 20px;
+    margin: 5px;
+    height: auto;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: large;
+}
+
+.inventory-controls {
+    color: white;
+    text-align: center;
+    border: 3px solid white;
+    padding: 10px;
+    margin: 0px;
+    height: auto;  
+}
+
+.bottombox {
+    color: white;
+    text-align: center;
+    border: 3px solid white;
+    padding: 20px;
+    margin: 5px;
+    height: auto;
+    width: auto;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: small;
+}
