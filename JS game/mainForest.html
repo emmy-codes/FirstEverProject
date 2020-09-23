@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      The Secret Realm
+    </title>
+    <link rel="stylesheet" href="game.css">
+    <!-- add link for game.js-->
+    </head>
+    <h1 class="header1">The Secret Realm</h1>
+    <h2 class="header2">Journey into Kaos</h2>
+<body>
+
+<!-- do i need to use this, why? <main></main> -->
+
+<div class="gamebox">
+<div class="torches">
+  <img src="torch.gif">
+</div>
+  <div class="outerbox">
+    <div class="leftbox">
+      <div class="inventory-controls">
+      <h3 class="header2">Controls</h3>
+    </div>
+    <ul class="controlstext">
+        <li><span class="green">Go</span> - Moves your character one square.</li>
+        <li><span class="orange">Look</span> - Take a closer look at an item.</li>
+        <li><span class="yellow">Get</span> - Pick up an item.</li>
+        <li><span class="red">Use</span> - Use an item.</li>
+      </ul>
+    </div>
+
+    <div class="centreboxes">
+      <div class="topbox">
+        <p class="textp">You are stood in a gloomy area of a forest. It is a sunny day, but the thick canopy above means the light can only trickle through in patches 
+                        that appear to dance across the floor. The air feels thick, moist, and slightly unnerving. No birds are singing. 
+                        It looks like you are alone, although you sense you are being watched. 
+                        You can see a <span class="orange">Treestump</span> nearby with something leaning against it. 
+                        There is a dirt path leading <span class="green">North</span>, a very overgrown path to the <span class="green">East</span>, 
+                        a neat but old cobbled road leading <span class="green">South</span>, and the sound of running water coming from the <span class="green">West</span>.</p>
+
+    <!-- for the "Look Treestump" command:
+    <p class="textp"> You gingerly approach the treestump before realising that the object you had spotted was just an <span class="yellow">Axe</span> that had fallen on its' side. 
+        Perhaps this could be useful? </p>-->
+    
+    <!-- for the "Get Axe" command:
+    <p class="textp"> You bend down to retrieve the axe, casually noting that the blade is as sharp as the day it was made, despite being covered in dirt.
+        Brushing the worst of the muck away you carefully place it in your backpack, then look around to see what to do next. </p>-->  
+      </div>
+      <div class="bottombox">
+        <p><input class="inputField"> Hit Enter to continue</p>
+      </div>
+    </div>
+
+  <div class="rightbox">
+    <div class="inventory-controls">
+        <h3 class="header2">Inventory</h3>
+    </div>
+  </div>
+  </div>
+  <div class="torches">
+    <img src="torch.gif">
+  </div>
+</div>
+</body>
+<script src="game.js"></script>
+</html>

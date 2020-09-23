@@ -18,8 +18,9 @@ body {
     margin: 10px;
 }
 
-.welcomep {
+.textp {
     color: white;
+    padding: 2%;
 }
 
 .topbox {
@@ -34,8 +35,8 @@ body {
 }
 
 .outerbox {
-    width: 1000px;
-    height: 500px;
+    width: auto;
+    height: auto;
     border: 5px solid white;
     display: flex;
     margin: auto;
@@ -76,7 +77,7 @@ body {
     color: white;
     text-align: center;
     border: 3px solid white;
-    padding: 20px;
+    padding: 5px;
     margin: 5px;
     height: auto;
     width: auto;
@@ -87,4 +88,52 @@ body {
 .centreboxes {
     display: flex;
     flex-direction: column;
+}
+
+.torches {
+    display: flex;
+    z-index: -1;
+    padding: 10px;
+}
+
+.gamebox {
+    display: flex;
+}
+
+.green {
+    color: forestgreen;
+}
+
+.orange {
+    color: orange;
+}
+
+.red {
+    color: red;
+}
+
+.yellow {
+    color: yellow;
+}
+
+.button {
+    background-color: orangered;
+    text-align: center;
+    border-radius: 10px;
+    height: 10%;
+    width: 20%;
+    padding: 2%;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+}
+
+.controlstext {
+    color: white;
+    padding-inline-start: 20px;
+}
+
+.controlstext li {
+    margin: 10px 0;
+    text-align: left;
 }

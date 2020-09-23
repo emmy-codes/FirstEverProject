@@ -65,3 +65,68 @@ if (johnAvg > mikeAvg && johnAvg > maryAvg) {
 }
 
 
+/******************************************
+ * Functions
+ */
+// function, name of function, and argument(s)
+ function calculateAge(birthYear) {
+    return 2020 - birthYear;
+ }
+
+ var ageEmma = calculateAge(1986);
+ var ageGranny = calculateAge(1940);
+ var ageMum = calculateAge(1962);
+ console.log(ageEmma, ageGranny, ageMum);
+
+ function yearsUntilRetirement(year, firstName) {
+     var age = calculateAge(year)
+     var retirement = 70 - age;
+
+     if (retirement > 0) {
+        console.log(firstName + ' retires in ' + retirement + ' years.');
+     } else {
+         console.log(firstName + ' is already retired.');
+     }
+ }
+
+ yearsUntilRetirement(1986, 'Emma');
+ yearsUntilRetirement(1940, 'Granny');
+ yearsUntilRetirement(1962, 'Mum');
+
+ /* Function declaration
+
+ function whatDoYouDo(job, firstName);
+ */ 
+
+ // Function expression
+var whatDoYouDo = function(job, firstName) {
+ switch(job) {
+     case 'teacher':
+        return firstName + ' teaches kids how to code';
+     case 'drver':
+        return firstName + ' is the designated driver';
+     case 'designer':
+        return firstName + ' designs clothes in London';
+     default:
+         return firstName + ' has another job';
+ }
+}
+ console.log(whatDoYouDo('teacher', 'John'));
+
+
+ /*************************
+  * Functions (again) are like containers that hold
+  * some lines of code, which we can pass arguments into
+  * which can then return a result
+  */
+
+// function - name of function - (argument)
+function calculateAge(birthYear) { // birthyear is a variable inside the function
+    return 2018 - birthYear;
+}
+/* a function is like a machine that receives input, uses
+the data and returns something else/new */
+
+var ageJohn = calculateAge(1990);
+console.log(ageJohn);
+/* we have defined the argument of birth year */
