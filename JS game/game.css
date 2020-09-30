@@ -20,16 +20,16 @@ body {
 
 .textp {
     color: white;
-    padding: 2%;
+    padding: 1%;
 }
 
 .topbox {
     color: white;
     text-align: center;
     border: 3px solid white;
-    padding: 20px;
+    padding: 10px;
     margin: 5px;
-    height: 400px;
+    min-height: 400px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: large;
 }
@@ -79,10 +79,13 @@ body {
     border: 3px solid white;
     padding: 5px;
     margin: 5px;
-    height: auto;
+    height: 50px;
     width: auto;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: small;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .centreboxes {
@@ -136,4 +139,8 @@ body {
 .controlstext li {
     margin: 10px 0;
     text-align: left;
+}
+
+.hidden {
+    display: none;
 }

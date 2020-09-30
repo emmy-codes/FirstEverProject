@@ -13,7 +13,7 @@
 
 <!-- do i need to use this, why? <main></main> -->
 
-<div class="gamebox">
+<div class="gamebox" id="page4">
 <div class="torches">
   <img src="torch.gif">
 </div>
@@ -37,8 +37,23 @@
                          There is a wooden <span class="orange">Ladder</span> leaning precariously against the wall. 
                         You can exit to the <span class="green">West</span>.
         </p>
+
+        <!--hidden "Look Moss"-->  
+        <p class="textp hidden Look">At first glance it just looks as though the wall is entirely covered in moss, but as you tilt your head and gaze more intently at it, 
+          you notice that the moss is darker in places that looks roughly like an archway. Brushing away a few chunks reveals some sort of door, clearly long forgotten. 
+          A quick tug at the handle tells you that it is locked, and you would need a key to open it.</p>
+        <!--hidden "Look Ladder"-->
+        <p class="textp hidden Look">Upon closer inspection, you can see that the ladder has seen better days. The wood appears to be slightly rotted, and one of the lower rungs is missing.</p>
+        <!--hidden "Use Ladder"-->
+        <p class="textp hidden Use">Deciding it is worth the risk, you grab hold of the ladder with both hands. It creaks beneath your grip, but you put one foot on the first rung, 
+          then the other foot on the next. As your foot lands on the third rung you hear a loud snapping sound as the frail wood beneath your foot gives way and sends you tumbling back 
+          down to the ground. Best not to try that again.</p>
       </div>
       <div class="bottombox">
+        <form class="form"> <!-- form allows you to have the same reaction when both hitting enter and clicking the button-->
+          <input type="text" class="input" />
+          <button type="submit">Enter</button>
+        </form>
       </div>
     </div>
 
