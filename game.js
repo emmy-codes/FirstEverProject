@@ -46,7 +46,7 @@ The values of these properties are ARRAYS (everything in square brackets ever)*/
 
 form.addEventListener('submit', function (event) { // submit event is a real thing! it is a property for this function
 
-    let pageId = page.id; // we created page.id using the page variable on line 8 - this is looking for the gamebox div on each page and reacts accordingly to the page nr
+    let pageId = page.id; // i created page.id using the page variable on line 8 - this is looking for the gamebox div on each page and reacts accordingly to the page nr
 
     // getting what the user typed and separating into action and search
     let strings = inputField.value.split(' '); // split with the ' ' separates the two words so they can be read (see line 53 + 54)
@@ -58,9 +58,18 @@ form.addEventListener('submit', function (event) { // submit event is a real thi
     let availableOptionsForAction = currentPage[action]; // ['Treestump'] 
 
     // get .hidden.Look (or .Get / .Go)
-    let hiddenText = document.querySelector('.hidden' + '.' + action + search);
+    let hiddenText = document.querySelector('.hidden' + '.' + action);
 
-    if (action === 'Look' || action === 'Get' || action === 'Use') {
+    if (action === 'Look' && 'Peaches') {
+        if (availableOptionsForAction && availableOptionsForAction.includes(search)) { // ['Treestump'] includes 'Treestump'
+        hiddenText.classList.remove('hidden Peaches');
+    }  else {
+        alert('Are you sure you are looking at the right thing? Try again');
+    }
+    }
+    
+    
+        if (action === 'Get' || action === 'Use') {
 
         if (availableOptionsForAction && availableOptionsForAction.includes(search)) { // ['Treestump'] includes 'Treestump'
             hiddenText.classList.remove('hidden');
