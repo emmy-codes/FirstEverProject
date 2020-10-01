@@ -90,5 +90,3 @@ form.addEventListener('submit', function (event) { // submit event is a real thi
     inputField.value = ''; // clears the box once you hit enter
     event.preventDefault(); // Prevents default behavior of the event -  if you don't have this, then when you hit submit it reloads the page
 });
-
-if (action === 'Look' && 'Stream'
