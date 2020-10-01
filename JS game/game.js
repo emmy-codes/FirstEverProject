@@ -46,13 +46,13 @@ The values of these properties are ARRAYS (everything in square brackets ever)*/
 
 form.addEventListener('submit', function (event) { // submit event is a real thing! it is a property for this function
 
-    let pageId = page.id; // this is looking for the gamebox div on each page and reacts accordingly to the page nr
+    let pageId = page.id; // we created page.id using the page variable on line 8 - this is looking for the gamebox div on each page and reacts accordingly to the page nr
 
     // getting what the user typed and separating into action and search
     let strings = inputField.value.split(' '); // ['look', 'Treestump']
-    let action = strings[0]; // 'Look' / 'Get' / 'Go'
-    let search = strings[1] // 'Treestump'
-    let currentPage = pagesOptions[pageId];
+    let action = strings[0]; // action variable is looking for word 1
+    let search = strings[1] // search variable is looking for word 2
+    let currentPage = pagesOptions[pageId]; // checks the ID on the gamebox div and lets you know which actions work here
 
     // currentPage[action] === currentPage.look, which is either page1, page2, ...
     let availableOptionsForAction = currentPage[action]; // ['Treestump'] 
