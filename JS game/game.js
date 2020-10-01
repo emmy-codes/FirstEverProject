@@ -49,7 +49,7 @@ form.addEventListener('submit', function (event) { // submit event is a real thi
     let pageId = page.id; // we created page.id using the page variable on line 8 - this is looking for the gamebox div on each page and reacts accordingly to the page nr
 
     // getting what the user typed and separating into action and search
-    let strings = inputField.value.split(' '); // ['look', 'Treestump']
+    let strings = inputField.value.split(' '); // split with the ' ' separates the two words so they can be read (see line 53 + 54)
     let action = strings[0]; // action variable is looking for word 1
     let search = strings[1] // search variable is looking for word 2
     let currentPage = pagesOptions[pageId]; // checks the ID on the gamebox div and lets you know which actions work here
