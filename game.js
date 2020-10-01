@@ -72,14 +72,11 @@ form.addEventListener('submit', function (event) { // submit event is a real thi
 
         if (search === 'North') {
             location.href = page5URL;
-        }
-        if (search === 'South') {
+        } else if (search === 'South') {
             location.href = page2URL;
-        }
-        if (search === 'East') {
+        } else if (search === 'East') {
             location.href = page4URL;
-        }
-        if (search === 'West') {
+        } else if (search === 'West') {
             location.href = page3URL;
         } else {
             alert('Unknown command, please try again');
