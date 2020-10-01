@@ -7,11 +7,11 @@ let inputField = document.querySelector('.input');
 let form = document.querySelector('.form');
 let page = document.querySelector('.gamebox');
 
-let page1URL = '/mainForest.html';
-let page2URL = '/ruinsSouth.html';
-let page3URL = '/streamWest.html';
-let page4URL = '/wallEast.html';
-let page5URL = '/cottageNorth.html';
+let page1URL = 'mainForest.html';
+let page2URL = 'ruinsSouth.html';
+let page3URL = 'streamWest.html';
+let page4URL = 'wallEast.html';
+let page5URL = 'cottageNorth.html';
 
 let pagesOptions = {
     page1: { // mainForest
