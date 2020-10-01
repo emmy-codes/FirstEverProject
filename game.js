@@ -60,7 +60,7 @@ form.addEventListener('submit', function (event) { // submit event is a real thi
     // get .hidden.Look (or .Get / .Go)
     let hiddenText = document.querySelector('.hidden' + '.' + action);
 
-    if (action === 'Look' && 'Peaches') {
+    if (action === 'Look' && search === 'Peaches') {
         if (availableOptionsForAction && availableOptionsForAction.includes(search)) { // ['Treestump'] includes 'Treestump'
         hiddenText.classList.remove('hidden' + 'Peaches');
     }  else {
