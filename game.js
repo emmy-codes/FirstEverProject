@@ -62,7 +62,7 @@ form.addEventListener('submit', function (event) { // submit event is a real thi
 
     if (action === 'Look' && 'Peaches') {
         if (availableOptionsForAction && availableOptionsForAction.includes(search)) { // ['Treestump'] includes 'Treestump'
-        hiddenText.classList.remove('hidden Peaches');
+        hiddenText.classList.remove('hidden' + 'Peaches');
     }  else {
         alert('Are you sure you are looking at the right thing? Try again');
     }
