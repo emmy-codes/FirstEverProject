@@ -60,16 +60,7 @@ form.addEventListener('submit', function (event) { // submit event is a real thi
     // get .hidden.Look (or .Get / .Go)
     let hiddenText = document.querySelector('.hidden' + '.' + action);
 
-    if (action === 'Look' && search === 'Peaches') {
-        if (availableOptionsForAction && availableOptionsForAction.includes(search)) { // ['Treestump'] includes 'Treestump'
-        hiddenText.classList.remove('hidden' + 'Peaches');
-    }  else {
-        alert('Are you sure you are looking at the right thing? Try again');
-    }
-    }
-    
-    
-        if (action === 'Get' || action === 'Use') {
+    if (action === 'Look' || action === 'Get' || action === 'Use') {
 
         if (availableOptionsForAction && availableOptionsForAction.includes(search)) { // ['Treestump'] includes 'Treestump'
             hiddenText.classList.remove('hidden');
